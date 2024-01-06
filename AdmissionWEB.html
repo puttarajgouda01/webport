@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Admission</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0.5em;
+        }
+        body 
+        {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+
+        header {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: black;
+
+            text-align: center;
+            padding: 1em;
+            z-index: -1;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border: #585353;
+
+        }
+        h1 {
+            text-align: center;
+            text-transform: uppercase;
+            viewport-fit: auto;
+        }
+        h2 {
+            color:white;
+            text-align: center;
+            margin:20px;
+            viewport-fit: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.5em;
+        }
+        input, select {
+            margin-bottom: 1em;
+            padding: 0.5em;
+        }
+        .button-container {
+            margin-top: 20px;
+        }    
+         button {
+            background-color: #4CAF50;
+            color: white;
+            padding: auto;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+         }   
+         button:hover {
+            background-color: #45a049;
+         }
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            color: #585353;
+        }
+        nav ul li {
+            list-style: none;
+            Padding-right: 10px;
+            margin-right: 20px;
+            display: inline-block;
+            justify-content: center;
+        }
+        img {
+            float: left;
+            clear: right;
+            image-rendering: auto;
+            padding : auto;
+        }
+    </style>
+</head>
+<body background="C:\Users\puttarajgouda patil\OneDrive\Desktop\WEBD_PROJECT\Back.jpeg">
+
+    <header>
+        <img src="/themes/custom/usip/assets/img/USIP-logo-front-new.png" alt="USIP Logo">
+    
+        <h1>COLLEGE ADMISSION</h1>
+        <nav>
+            <ul>
+                <li><a href="C:\Users\puttarajgouda patil\OneDrive\Desktop\WEBD_PROJECT\HOMEPAGE.html"target=_blank>HOME</a></P>
+                <li><a href="C:\Users\puttarajgouda patil\OneDrive\Desktop\WEBD_PROJECT\HOMEPAGE.html"target=_blank>ABOUT</a></li>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScmxkUZ2oGkY7qvAT_9ErflXQfpul5ksnZEGP38tcOY3Tzfyw/viewform?usp=sf_link"target=_blank>CONTACT</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+
+    <h2>Admission Form</h2><br>
+
+    <section>
+        <form action="Microsoft Edge.lnk" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="name">Sur Name:</label>
+            <input type="text" id="srnme" name="surname" required>
+
+            <label for="class">Which class are u planing to join:</label>
+            <select id="cls" name="class" required>
+                <option value="I PUC">FIRST PUC</option>
+                <option value="II PUC">SECOND PUC</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="program">Program of Interest:</label>
+            <select id="program" name="program" required>
+                <option value="PCMB">SCIENCE-PCMB</option>
+                <option value="PCMC">SCIENCE-PCMC</option>
+                <option value="ECONIMICS">COMMERCE-ECONOMICS</option>
+                <option value="STATS">COMMERCE-STATISTICS</option>
+                
+
+            </select>  
+            
+            <button type="clear">CLEAR APPLICATION</button>
+        </form>
+        <section>
+        <form action="Microsoft Edge.lnk"post>
+
+            <label for="documents">UPLOAD YOUR 10TH MARKSCARD</label>
+            <input type="file" id="10th MARKSCARD" required><br>
+
+            <label for="docs">UPLOAD YOUR ORGINAL TC</label>
+            <input type="file" id="TC ORGINAL" required><br>
+
+            <label for="doc">UPLOAD YOUR CHARECTER CERTIFICATE</label>
+            <input type="file" id="CC CERTIFICATE" required><br>
+
+            <label for="dcs">UPLOAD AADHAR CARD</label>
+            <input type="file" id="AADHAR CERTIFICATE" required><br>
+            
+            <label for="cert">UPLOAD BIRTHCERTIFICATE</label>
+            <input type="file" id="BIRTHCERTIFICATE" required><br>
+
+            <button type="submit">Submit Application</button>
+
+         
+
+        </form>
+    </section>
+    
+</section>
+
+
+    <footer>
+        &copy; 2023 EVERYDAY KANNADA MEDIUM SCHOOL<br>
+        The multicultural population and progressive attitude of Bengaluru make it one of the most contemporary cities for young minds who hope to do things differently.
+        Come, discover what makes this city so special and enjoy the benefits during your study at EKMS, one of the best SCHOOLS in Bengaluru.
+    </footer>
+
+    <script>
+        function submitForm() {
+            document.getElementById("admissionForm").reset();
+        }
+
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var cls = document.getElementById('cls').value;
+            var email = document.getElementById('email').value;
+            var dob = document.getElementById('dob').value;
+            var program = document.getElementById('program').value;
+
+            return true;
+        }
+    </script>
+
+
+    
+</body>
+</html>
